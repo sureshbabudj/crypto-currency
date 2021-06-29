@@ -1,0 +1,9 @@
+table.column-scroll-table td.fix-columns,
+table.column-scroll-table th.fix-columns {
+  width: 15%;
+  border-right: 1px solid #f0f0f0;
+  box-shadow: 2px 0px 1px 0px #ccc;
+}
+table.column-scroll-table td p {
+  margin: 0;
+}

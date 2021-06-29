@@ -1,0 +1,51 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.pagination .page-limit-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-right: 1rem;
+  flex: 3;
+}
+
+.pagination .page-limit-wrap > * {
+  margin-right: 1rem;
+}
+
+.pagination .page-limit-wrap > *:last-child {
+  margin-right: 0;
+}
+
+.pagination .page-limit-wrap .page-limit {
+  flex: 1;
+}
+
+.pagination ul {
+  margin: 1rem auto;
+  padding: 0;
+  list-style: none;
+  flex: 13;
+}
+
+.pagination ul li {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #efefef;
+}
+
+.pagination ul li:hover,
+.pagination ul li.active {
+  background-color: coral;
+  color: #ffffff;
+}

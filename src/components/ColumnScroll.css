@@ -1,0 +1,40 @@
+.column-scroll-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+}
+
+ul.column-scroll {
+  margin: 1rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+ul.column-scroll li {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul.column-scroll li.column-dot::after {
+  display: block;
+  content: " ";
+  height: 1rem;
+  width: 1rem;
+  background-color: #929292;
+  border-radius: 50%;
+}
+
+ul.column-scroll li.column-dot.active::after {
+  background-color: coral;
+}
+
+ul.column-scroll li.column-dot:hover::after {
+  background-color: crimson;
+}
+
+ul.column-scroll li.column-scroll-btn:hover {
+  color: crimson;
+}
