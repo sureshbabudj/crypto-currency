@@ -33,8 +33,8 @@ function TableCell({ cellData, header }) {
   }
   return (
     <td>
-      {cellData[header.id] !== undefined ||
-      cellData[header.id] !== null ||
+      {cellData[header.id] !== undefined &&
+      cellData[header.id] !== null &&
       cellData[header.id] !== "" ? (
         <span>{renderContent()}</span>
       ) : (

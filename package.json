@@ -29,6 +29,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://sureshbabudj.github.io/crypto-currency/",
   "browserslist": {
     "production": [
       ">0.2%",

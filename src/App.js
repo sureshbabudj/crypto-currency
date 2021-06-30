@@ -20,22 +20,58 @@ function App() {
         <nav className="header">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link
+                to={`${
+                  process.env.NODE_ENV === "production"
+                    ? "/crypto-currency"
+                    : ""
+                }/`}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/coins">Coins</Link>
+              <Link
+                to={`${
+                  process.env.NODE_ENV === "production"
+                    ? "/crypto-currency"
+                    : ""
+                }/coins`}
+              >
+                Coins
+              </Link>
             </li>
             <li>
-              <Link to="exchanges">Exchanges</Link>
+              <Link
+                to={`${
+                  process.env.NODE_ENV === "production"
+                    ? "/crypto-currency"
+                    : ""
+                }/exchanges`}
+              >
+                Exchanges
+              </Link>
             </li>
             <li class="nav-header">
-              <Link to="about">About</Link>
+              <Link
+                to={`${
+                  process.env.NODE_ENV === "production"
+                    ? "/crypto-currency"
+                    : ""
+                }/about`}
+              >
+                About
+              </Link>
             </li>
           </ul>
         </nav>
       </header>
       <div className="container" style={{ paddingTop: "57px" }}>
-        <Router>
+        <Router
+          basepath={
+            process.env.NODE_ENV === "production" ? "/crypto-currency" : "/"
+          }
+        >
           <Home path="/" />
           <About path="about" />
           <Exchanges path="exchanges" />
