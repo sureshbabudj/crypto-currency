@@ -5,6 +5,12 @@ import "./App.css";
 import { Router, Link } from "@reach/router";
 const Home = () => <h3>Home</h3>;
 const About = () => <h3>About</h3>;
+const NotFound = () => (
+  <div style={{ textAlign: "center", margin: "2rem 0" }}>
+    <h1>404</h1>
+    <p>Sorry, The page is not found.</p>
+  </div>
+);
 
 function App() {
   return (
@@ -34,6 +40,7 @@ function App() {
           <About path="about" />
           <Exchanges path="exchanges" />
           <Coins path="coins" />
+          <NotFound default />
         </Router>
       </div>
     </div>
